@@ -1,0 +1,12 @@
+import random
+n=random.randint(-10, 10)
+while True:
+    text = input("Введите число или стоп: ")
+    if text == "стоп":
+        print("загаданное число", n)
+        break
+    elif int(text) == n:
+        print("Победа")
+        break
+    else:
+        print("Попробуйте еще")
