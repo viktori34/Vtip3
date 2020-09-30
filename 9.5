@@ -1,0 +1,16 @@
+import random
+L = ['самовар', 'весна','лето']
+word= random.choice(L)
+letter= random.choice(word)
+sp = list(word)
+zn = word.index(letter)
+sp[zn]='?'
+print(''.join(sp))
+
+while True:
+    my = input('Введите букву:')
+    if my==letter :
+        print('Вы правы!')
+        break
+    else:
+        print('Неверно')
