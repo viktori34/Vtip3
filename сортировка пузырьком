@@ -1,0 +1,12 @@
+def func(n):  
+    p = True
+    while p:
+        p = False
+        for i in range(len(n) - 1):
+            if n[i] > n[i + 1]:
+                n[i], n[i + 1] = n[i + 1], n[i]
+                p = True
+
+rand = [1, 9, 10, 2, 12]  
+func(rand)  
+print(rand)
