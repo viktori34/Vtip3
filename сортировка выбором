@@ -1,0 +1,11 @@
+def func(n):  
+    for i in range(len(n)):
+        l = i
+        for j in range(i + 1, len(n)):
+            if n[j] < n[l]:
+                l = j
+        n[i], n[l] = n[l], n[i]
+
+rand = [8, 20,36, 100, 2]  
+func(rand)  
+print(rand) 
