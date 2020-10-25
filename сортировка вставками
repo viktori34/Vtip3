@@ -1,0 +1,12 @@
+def func(n):  
+    for i in range(1, len(n)):
+        s = n[i]
+        j = i - 1
+        while j >= 0 and n[j] > s:
+            n[j + 1] = n[j]
+            j -= 1
+        n[j + 1] = s
+
+rand = [7, 16, 1, 9, 5]  
+func(rand)  
+print(rand)
