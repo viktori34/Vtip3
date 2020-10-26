@@ -1,0 +1,6 @@
+from random import randint
+def func(n, m):
+    mass = [[randint (0, 100) for x in range(n)] for i in range(m)]
+    for x in mass:
+        print(x)
+func(10, 6)
