@@ -1,0 +1,8 @@
+def func():
+    n = int(input("число: "))
+    s = 0
+    for x in str(n):
+        if int(x)%2!=0:
+            s += int(x)**2
+    print("cумма квадратов нечетных цифр = ", s)
+func()
