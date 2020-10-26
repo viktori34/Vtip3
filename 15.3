@@ -1,0 +1,10 @@
+class StringVar:
+    def __init__(self):
+         self.s = ''
+    def set (self, d):
+        self.s = d
+    def get (self):
+        return self.s
+s = StringVar()
+print(s.set('тут строка'))
+print(s.get())
