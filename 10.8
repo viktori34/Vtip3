@@ -1,0 +1,7 @@
+text = 'Я пытаюсь сделать втип'
+m = 0
+for index, word in enumerate(text.split()):
+    if len(word) > m:
+        i = index
+        m = len(word)
+print('самое длинной слово:',(i + 1))
