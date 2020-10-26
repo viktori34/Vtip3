@@ -1,0 +1,19 @@
+from random import randint
+N = 8
+M = 5
+k=0 
+s=0
+lst=[[randint(1, 9) for i in range(N)] for i in range(M)]
+for i in lst:
+    print()
+    for j in i:
+        print (j, end=" ")
+
+for i in range(M): 
+    for j in range(N):
+        k1=lst[i].count(lst[i][j])
+        if k1>k: 
+            k=k1 
+            s=i  
+print()
+print(s+1)
