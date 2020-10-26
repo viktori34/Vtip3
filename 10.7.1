@@ -1,0 +1,10 @@
+def func(line):
+    line = line.split()
+    for i in range(len(line) - 1):
+        if line[i][0] == "м":
+            del line[i]
+        return line
+
+text = "мой дядя самых честных правил, когда не в шутку занемог, он уважать себя заставил и лучше выдумать не мог"
+
+print(' '.join(word_deleted(text)))
